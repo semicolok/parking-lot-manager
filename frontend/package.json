@@ -1,0 +1,26 @@
+{
+  "name": "parking-lot-manager-fronted",
+  "description": "Parking lot management system",
+  "dependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.2.1",
+    "react": "~16.10.2",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "~16.10.2",
+    "react-table": "~6.10.3",
+    "react-js-pagination": "~3.0.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "watch": "node scripts/watch.js"
+  }
+}

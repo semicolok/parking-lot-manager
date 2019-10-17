@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    initialization-mode: always
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    open-in-view: false
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
+  batch:
+    initialize-schema: always
+
+logging:
+  level:
+    root: ${ROOT_LOG_LEVEL}
+    org.springframework.core: INFO
+    org.springframework.context: INFO
+    org.springframework.beans.factory.support: INFO
+    org.springframework.boot.autoconfigure.logging: INFO
+    org.springframework.boot.test.context: INFO
+    org.springframework.jdbc.datasource.init: INFO
+    org.apache.tomcat.util: INFO
+    org.apache.catalina: INFO
+    sun.rmi: INFO

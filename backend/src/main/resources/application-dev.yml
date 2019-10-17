@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    driverClassName: org.h2.Driver
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  batch:
+    initialize-schema: always
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework.core: INFO
+    org.springframework.context: INFO
+    org.springframework.beans.factory.support: INFO
+    org.springframework.boot.autoconfigure.logging: INFO
+    org.springframework.boot.test.context: INFO
+    org.springframework.jdbc.datasource.init: INFO
+    org.apache.tomcat.util: INFO
+    org.apache.catalina: INFO
+    sun.rmi: INFO

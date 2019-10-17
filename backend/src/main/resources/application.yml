@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: parking-lot-manager
+  groovy:
+    template:
+      check-template-location: false
+
+parking:
+  lot:
+    api:
+      seoul:
+        base-url: ${SEOUL_OPEN_API_BASE_URL}
+        auth-key: ${SEOUL_OPEN_API_AUTH_KEY}
+        connection-timeout-seconds: 60
+        read-timeout-seconds: 30
+        write-timeout-seconds: 30
