@@ -3,6 +3,9 @@
 **/bin/
 **/out/
 **/src/querydsl/
+**/node_modules/
+
+/frontend/src/main/resources/static/dist/
 
 # Ignore Gradle GUI config
 gradle-app.setting
