@@ -34,11 +34,7 @@ public class CopySeoulParkingLotInfoTasklet implements Tasklet {
         int pageNumber = 0;
         boolean finished = false;
 
-        while (true) {
-            if (finished) {
-                break;
-            }
-
+        while (!finished) {
             final Page<ParkingLot> parkingLots = parkingLotResourceHandler.getAll(PageRequest.of(pageNumber++, 1000));
             final List<ParkingLot> content = parkingLots.getContent();
 

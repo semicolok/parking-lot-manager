@@ -14,11 +14,11 @@ import java.util.Map;
 public class ParkingLotManagerExceptionHandler {
 
     @ExceptionHandler(ParkingLotManagerException.class)
-    public ResponseEntity<Map<String, String>> handleUrlShortenerException(ParkingLotManagerException e) {
+    public ResponseEntity<Map<String, String>> handleParkingLotManagerException(ParkingLotManagerException e) {
         final HttpStatus httpStatus = e.getHttpStatus();
         final String message = e.getMessage();
 
-        log.error("UrlShortenerException. httpStatus: {}, message: {}", httpStatus, message, e);
+        log.error("ParkingLotManagerException. httpStatus: {}, message: {}", httpStatus, message, e);
 
         final Map<String, String> responseBody = Maps.newHashMap();
         responseBody.put("errorMessage", message);

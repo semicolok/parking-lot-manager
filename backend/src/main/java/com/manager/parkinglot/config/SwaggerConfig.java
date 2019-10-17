@@ -19,6 +19,6 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("com.manager.parkinglot.controller"))
                 .paths(PathSelectors.any())
                 .build()
-                .apiInfo(new ApiInfoBuilder().version("1.0").title("Parking lot manager API").description("Documentation Parking lot manager API v1.0").build());
+                .apiInfo(new ApiInfoBuilder().version("1.0").title("Parking lot manager API").description("Parking lot manager API v1.0").build());
     }
 }
