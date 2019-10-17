@@ -31,7 +31,8 @@ $ ../gradlew :backend:dockerCreateDockerfile && cat build/docker/Dockerfile
 There are 2 ways you can run this project with. Run JAR file and use gradle "bootRun" task.  
 ##### jar run  
 ```  
-$ java -jar ./build/libs/backend-0.0.1-SNAPSHOT.jar
+$ ../gradlew :backend:clean :backend:build  
+$ java -jar build/libs/backend-0.0.1-SNAPSHOT.jar
 ```  
 ##### gradle bootRun  
 ```  

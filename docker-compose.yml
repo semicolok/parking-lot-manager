@@ -17,8 +17,8 @@ services:
 
   api-server:
     build: .
-    image: parking-lot-manager:0.0.1
-    container_name: parking-lot-manager
+    image: parking-lot-manager-backend:0.0.1
+    container_name: parking-lot-manager-backend
     environment:
       SPRING_PROFILES_ACTIVE: stag
       SEOUL_OPEN_API_BASE_URL: http://openapi.seoul.go.kr:8088

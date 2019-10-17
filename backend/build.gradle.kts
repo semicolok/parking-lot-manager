@@ -68,7 +68,7 @@ dependencies {
     testRuntime("org.junit.jupiter:junit-jupiter-engine")
 }
 
-val dockerImageName: String by extra { "parking-lot-manager" }
+val dockerImageName: String by extra { "parking-lot-manager-backend" }
 val dockerImageTag: String by extra { "0.0.1" }
 
 docker {
