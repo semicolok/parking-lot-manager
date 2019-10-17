@@ -8,7 +8,7 @@ Ensure that you have Java 8 installed and set to your JAVA_HOME.
 [README.md](frontend/README.md)  
 #### Run and stop with docker-compose  
 ```    
-$  ./gradlew clean buildReactApp dockerBuildImage
+$  ./gradlew clean dockerBuildImage
 $ docker-compose up
 $ docker-compose down
 ```  

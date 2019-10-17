@@ -6,11 +6,11 @@ $ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 #### Build project
 This project has gradle wrapper. You can build it without installing gradle.  
 ```    
-$ ../gradlew :frontend:clean :frontend:buildReactApp && ls -al build
+$ ../gradlew :frontend:clean :frontend:build && ls -al build
 ```  
 #### Build docker image  
 ```  
-$ ../gradlew :frontend:clean :frontend:buildReactApp :frontend:dockerBuildImage
+$ ../gradlew :frontend:clean :frontend:dockerBuildImage
 ```  
 #### generate Dockerfile  
 ```  
@@ -20,12 +20,12 @@ $ ../gradlew :frontend:dockerCreateDockerfile && cat build/docker/Dockerfile
 There are 2 ways you can run this project with. Run JAR file and use gradle "bootRun" task.  
 ##### jar run  
 ```
-$ ../gradlew :frontend:clean :frontend:buildReactApp :frontend:build  
+$ ../gradlew :frontend:clean :frontend:build  
 $ java -jar build/libs/frontend-0.0.1-SNAPSHOT.jar
 ```  
 ##### gradle bootRun  
 ```  
-$ ../gradlew :frontend:clean :frontend:buildReactApp :frontend:bootRun
+$ ../gradlew :frontend:clean :frontend:bootRun
 ```  
 #### URL
 ```    
