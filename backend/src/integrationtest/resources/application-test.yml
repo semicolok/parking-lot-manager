@@ -36,7 +36,7 @@ parking:
     api:
       seoul:
         base-url: http://openapi.seoul.go.kr:8088
-        auth-key: 526467484764616931303072734f696f
+        auth-key: your-auth-key
         connection-timeout-seconds: 60
         read-timeout-seconds: 30
         write-timeout-seconds: 30
