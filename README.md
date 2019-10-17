@@ -3,6 +3,7 @@
 Firstly check your network environment.  
 This projects uses external API.
 You should check if you are in the network environment that allow it to access to the external API or not.
+If you cannot, this project only use default data.  
 #### How to check it   
 ```    
 $ curl -vs http://openapi.seoul.go.kr:8088/your-auth-key/json/GetParkInfo/1/2/
@@ -26,18 +27,3 @@ $ docker-compose down
 ```  
 #### URL  
 http://localhost:3000  
-
-
-Important
----------
-When **parking-lot-backend** boots up, it starts to prepare data to serve. It takes 2 mins.  
-Until it is finished, **parking-lot-frontend** can not get any data from the backend.  
-
-### Data preparation process  
-**parking-lot-backend** has batch to initialize database. Get parking lot data from **providers** and save them to **Database**.  
-Every 5 minutes, data in database are updated.  
-#### Why we need it  
-Providers doesn't provide search functions we need such as sorting, searching by address and response data count limit.  
-And sometime they are too slow to use in real time application  
-Their response time takes 2~3 seconds.  
-These are reason why we need to copy them to our database.  
