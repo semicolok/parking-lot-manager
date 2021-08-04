@@ -1,7 +1,7 @@
 # parking-lot-manager  
 ## Setup  
 Firstly check your network environment.  
-This projects uses external API.
+This projects use external API.
 You should check if you are in the network environment that allow it to access to the external API or not.
 If you cannot, this project only use default data.  
 #### How to check it   
